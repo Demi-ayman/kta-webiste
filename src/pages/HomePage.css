@@ -1,0 +1,220 @@
+/* Concept Section */
+.home-concept {
+  padding: 85px 0;
+  background: white;
+}
+
+.home-concept__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.home-tag {
+  display: inline-block;
+  background: rgba(42, 157, 143, 0.12);
+  color: var(--teal);
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 5px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.home-concept__content h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.lead-text {
+  font-size: 1.08rem;
+  color: var(--navy);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.home-concept__content p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 25px;
+}
+
+.home-concept__features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.h-feat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.home-concept__actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.home-concept__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-concept__visual {
+  position: relative;
+}
+
+.concept-image-card {
+  position: relative;
+}
+
+.concept-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.concept-floating-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.concept-floating-badge strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--navy);
+}
+
+.concept-floating-badge span {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+}
+
+/* Home Courses: ONE Single Line, Small & Compact */
+.home-courses {
+  background: var(--light-bg);
+  padding: 70px 0;
+}
+
+.home-courses__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.h-compact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 16px;
+  border: 1px solid #eef0f2;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.25s ease;
+}
+
+.h-compact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+  border-color: var(--c-color);
+}
+
+.h-compact-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.h-compact-card__age {
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.h-compact-card__title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.h-compact-card__desc {
+  color: var(--text-gray);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.h-compact-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-top: auto;
+  transition: gap 0.2s;
+}
+
+.h-compact-card__link:hover {
+  gap: 8px;
+}
+
+.home-courses__cta {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .home-concept__grid { grid-template-columns: 1fr; }
+  .home-courses__row {
+    overflow-x: auto;
+    display: flex;
+    padding-bottom: 12px;
+  }
+  .h-compact-card {
+    min-width: 220px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-concept__content h2 { font-size: 1.8rem; }
+  .h-compact-card {
+    min-width: 200px;
+  }
+}

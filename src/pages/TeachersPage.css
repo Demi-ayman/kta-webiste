@@ -1,0 +1,90 @@
+.teaching-standards {
+  padding: 80px 0;
+  background: white;
+}
+
+.standards__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.standard-card {
+  background: var(--light-bg);
+  border-radius: 20px;
+  padding: 30px 22px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.standard-card:hover {
+  transform: translateY(-6px);
+}
+
+.standard-card__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.standard-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.standard-card p {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+/* Join Team */
+.join-team {
+  background: linear-gradient(135deg, var(--navy) 0%, #111a2e 100%);
+  padding: 60px 0;
+  color: white;
+}
+
+.join-team__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.join-team__text h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.join-team__text p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  max-width: 600px;
+}
+
+.join-team__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .standards__grid { grid-template-columns: repeat(2, 1fr); }
+  .join-team__inner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 600px) {
+  .standards__grid { grid-template-columns: 1fr; }
+}
+
