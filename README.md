@@ -1,7 +1,8 @@
 # 🚀 KTA - Kids Tech Academy Website
 
 A modern, responsive, and vibrant website built with **React** & **Vite** for **KTA (Kids Tech Academy)** — inspired by top STEM academies like iSchool and STEM Academy.
-
+🌐 Live Website:
+https://ktia-website.vercel.app
 ---
 
 ## 🎨 Features & Sections
